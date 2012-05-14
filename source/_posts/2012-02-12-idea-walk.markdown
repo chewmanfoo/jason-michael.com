@@ -1,0 +1,19 @@
+---
+layout: post
+title: "Idea Walk"
+date: 2012-02-12 19:11
+comments: true
+categories: ideas, community, web 
+---
+
+I took a walk today with my dog and had a number of ideas.
+
+<!-- more -->
+
+## Community Cooking
+
+I could smell what people were cooking in their houses.  Could there be a way where everyone could taste the dinner of everyone else?  Could we all login to a **web service** and offer up 'an extra helping' of Beef Stroghanoff or Beef Enchiladas or Chicken Cacciatore for cost plus a small fee?  Could the entire neighborhood find themselves cooking for others and making a tidy profit, such that _when you cook at home, the service pays for the materials out of your exchange profits_?
+
+## Hive messaging
+
+Could there be a way to be able to text the guy next to you anonymously without meeting him first?  Perhaps everybody would be registered with a service that tracks our sms/mms handle, photo and GPS coordinates, so that you could launch the app on your phone and be able to pick the stranger next to you and sms "Hello" to him?  I see this as more of an advancement in civilization than just a new service.  But, just like the guy who tries to remove a screw with a hammer because all he knows is the hammer and thus, to him, everything looks like a nail, I'm solving this problem with a web service.  So I can see a weakness in my solution.  But surely there's an excellent solution to this.  
