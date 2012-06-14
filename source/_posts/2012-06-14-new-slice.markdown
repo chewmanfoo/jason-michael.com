@@ -1,0 +1,11 @@
+---
+layout: post
+title: "new slice"
+date: 2012-06-14 18:07
+comments: true
+categories: linode, hosting, jason-michael.com 
+---
+I have successfully migrated my VPS from a CentOS 5.6 slice on linode to anew CentOS 6.2 slice on linode.  I did this because I needed ot upgrade to CentOS 6.2 and I had no idea how to do it otherwise.  So, I bought a new slice and began to copy all my stuff over.  I reinstalled iRedMail (for nospam (at) jason-michael.com etc.) and rails with rvm and all the gems and all the other dev stuff and the mysql instance and postgresql etc.  Rails makes it so easy to move from server to server - since my projects are all on github, I just do a git clone to get the project on my new server, then I introduce myself (on the new server) to github so I can commit.  It works great.
+<!-- more -->
+Details:
+
