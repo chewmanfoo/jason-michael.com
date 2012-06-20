@@ -56,7 +56,7 @@ Now we can add queries to the Workorder model which pull from this unfriendly su
 end
 {% endcodeblock %}
 
-Note the godawful table attributes in the supportcenter database.  If you're sitting on your couch late at night, and you hear a knock on the door, and you go to the door and open it and look around, and if you see the supportcenter database on your doorstep, do not stop out the fire!!!
+Note the godawful table attributes in the supportcenter database.  If you're sitting on your couch late at night, and you hear a knock on the door, and you go to the door and open it and look around, and if you see the supportcenter database on your doorstep, do not stomp out the fire!!!
 
 Therefore, we can slice and dice the result array from this query within the controller:
 
