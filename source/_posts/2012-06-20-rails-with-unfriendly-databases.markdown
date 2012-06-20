@@ -15,6 +15,16 @@ I recently added a report to my corporate site survey Rails project which needed
 
 You can either add login/password to your model, or add them to database.yml.  I chose to add them to database.yml:
 
+{% codeblock database.yml %}
+supportcenter_production:
+  adapter: mysql
+  database: supportcenter
+  username: uname
+  password: secret
+  host: 10.0.0.1
+  port: 3306
+{% endcodeblock %}
+
 Then, we'll use these credentials to connect to the database and run queries in our model.
 
 ## A new Rails model for the unfriendly database's table
