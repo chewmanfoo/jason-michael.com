@@ -44,4 +44,30 @@ end
 
 ## Queries and results
 
+Now we can add queries to the Workorder model which pull from this unfriendly supportcenter database:
 
+{% codeblock workorder.rb %}
+...
+  def self.get_one_week_of_major_critical_tickets
+#    self.get_tickets_by_range(Time.now()-1, Time.now()-14)
+    Workorder.find_by_sql("SELECT NOW() - interval 1 day as start, NOW() - interval 14 day as end, workorder.WORKORDERID AS REQUEST_ID, sladefinition.SLANAME AS PRIORITY, componenttype.COMPONENTTYPENAME AS PRODUCT_TYPE, componentdefinition.COMPONENTNAME AS PRODUCT, workorder_fields.UDF_CHAR2 AS DEGREE, workorder_fields.UDF_CHAR3 AS SVC_IMPACT, categorydefinition.CATEGORYNAME AS CATEGORY, statusdefinition.STATUSNAME AS STATUS, workorder_fields.UDF_CHAR5 AS CAUSE_CODE, workorder.CREATEDTIME AS CREATED_ON, aaauser.FIRST_NAME AS CREATED_BY, aaauser_1.FIRST_NAME AS ASSIGNED_TO, aaaorganization.NAME AS CUSTOMER, workorder.TITLE, workorder.RESOLVEDTIME AS RESOLVED_ON, aaauser_2.FIRST_NAME AS RESOLVED_BY, requestresolution.RESOLUTION, workorder.RESPONDEDTIME AS RESPONDED_ON, workorder.DUEBYTIME AS DUE_ON, workorder.LASTUPDATED AS LAST_UPDATED, workorder.COMPLETEDTIME AS COMPLETED_ON, TIMESPENTONREQ AS HOURS_SPENT FROM ((((((((((((workorder LEFT JOIN workorder_fields ON workorder.WORKORDERID = workorder_fields.WORKORDERID) LEFT JOIN requestresolution ON workorder.WORKORDERID = requestresolution.REQUESTID) LEFT JOIN workorderstates ON workorder.WORKORDERID = workorderstates.WORKORDERID) LEFT JOIN categorydefinition ON workorderstates.CATEGORYID = categorydefinition.CATEGORYID) LEFT JOIN aaauser AS aaauser_1 ON workorderstates.OWNERID = aaauser_1.USER_ID) LEFT JOIN aaauser ON workorder.CREATEDBYID = aaauser.USER_ID) LEFT JOIN sladefinition ON workorder.SLAID = sladefinition.SLAID) LEFT JOIN workorder_product ON workorder.WORKORDERID = workorder_product.WORKORDERID) LEFT JOIN (componentdefinition LEFT JOIN componenttype ON componentdefinition.COMPONENTTYPEID = componenttype.COMPONENTTYPEID) ON workorder_product.PRODUCT_ID = componentdefinition.COMPONENTID) LEFT JOIN statusdefinition ON workorderstates.STATUSID = statusdefinition.STATUSID) LEFT JOIN aaauser AS aaauser_2 ON workorder.RESOLVEDBY = aaauser_2.USER_ID) LEFT JOIN workorder_account ON workorder.WORKORDERID = workorder_account.WORKORDERID) LEFT JOIN aaaorganization ON workorder_account.ACCOUNTID = aaaorganization.ORG_ID where ((componenttype.COMPONENTTYPENAME)<>'Lab' and FROM_UNIXTIME(workorder.CREATEDTIME/1000) < (Now()- interval 1 day) And FROM_UNIXTIME(workorder.CREATEDTIME/1000) > (Now() - interval 7 day) and sladefinition.SLANAME is not null and (sladefinition.SLANAME = 'Critical SLA' or sladefinition.SLANAME = 'Major SLA'))")
+...
+  end
+end
+{% endcodeblock %}
+
+Note the godawful table attributes in the supportcenter database.  If you're sitting on your couch late at night, and you hear a knock on the door, and you go to the door and open it and look around, and if you see the supportcenter database on your doorstep, do not stop out the fire!!!
+
+Therefore, we can slice and dice the result array from this query within the controller:
+
+{% codeblock controller.rb %}
+...
+    @tickets = Workorder.get_one_week_of_tickets
+    @previous_weeks_tickets = Workorder.get_previous_week_of_tickets
+    @tickets_stats = Hash.new
+    @tickets.group_by(&:CUSTOMER).each do |c,ts|
+      @tickets_stats[c] = ts.size
+    end
+    @tickets_stats = @tickets_stats.sort_by {|c,count| count}.reverse
+...
+{% endcodeblock %}
