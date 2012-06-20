@@ -71,3 +71,5 @@ Therefore, we can slice and dice the result array from this query within the con
     @tickets_stats = @tickets_stats.sort_by {|c,count| count}.reverse
 ...
 {% endcodeblock %}
+
+It works like a charm.
