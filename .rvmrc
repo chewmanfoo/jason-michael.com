@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 rvm use 1.9.2@jason-michael.com --create
+=======
+rvm use 1.9.3
+>>>>>>> a96c0c6257fdbbbf6a11a9c93e523888fc897e00
