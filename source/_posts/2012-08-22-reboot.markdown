@@ -1,0 +1,21 @@
+---
+layout: post
+title: "Reboot"
+date: 2012-08-22 22:49
+comments: true
+categories: git, rails, life
+---
+I'm getting ready to make a significant life change.  This involves saying good-bye to people who were a technical resource to me, so now's the time to write down all the good things they taught me. This stuff may come in handy sooner rather than later.
+
+<!-- more -->
+
+## Git
+ * [Git Best Practices](http://sethrobertson.github.com/GitBestPractices)
+ * [Pro Git handbook](http://git-scm.com/book)
+
+## *nix
+ * [tcpreplay](http://tcpreplay.synfin.net/)
+ * [tmux](http://tmux.sourceforge.net/)
+
+## css
+ * [float containment](http://colinaarts.com/articles/float-containment/)
