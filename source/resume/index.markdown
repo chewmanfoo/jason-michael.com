@@ -6,4 +6,4 @@ comments: true
 sharing: true
 footer: true
 ---
-[My Resume, August 2013](http://www.jason-micahel.com/resume/JasonMichaelResumeAugust2013.docx)
+[My Resume, August 2013](http://www.jason-michael.com/resume/JasonMichaelResumeAugust2013.docx)
