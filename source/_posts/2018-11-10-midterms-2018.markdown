@@ -1,0 +1,28 @@
+---
+layout: post
+title: "Midterms 2018"
+date: 2018-11-10 15:46
+comments: true
+categories: politics 
+---
+So, our midterm elections came and went on last Tuesday.  In Texas, we all rallyed around Beto O'Rourke, but our hopes were dashed as the reptile Ted Cruz won by about
+220,000 votes (about 2.6%).  It was doubly disappointing because where I live in Tarrant County, we saw so many Beto yard signs, and we could easily see a blue wave
+rising up - everybody around us seemed to be of one mind: _It's time for the Tea Party to Go!_. Unfortunately, we failed to reach everyone, apparently.  Tarrant and
+Dallas counties both went for Beto, as did every big city in Texas, but rural voters carried Cruz over the finish line.   
+<!-- more -->
+
+<!-- see https://github.com/Shopify/liquid/wiki/Liquid-for-Designers for stuff 
+# H1
+## H2
+[I'm an inline-style link](https://www.google.com)
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png 'Logo Title Text 1')
+```javascript
+var s = 'JavaScript syntax highlighting';
+alert(s);
+```
+   * an unordered list item (note a newline is required before the list begins)
+   1. an ordered list item
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+-->
