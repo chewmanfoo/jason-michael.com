@@ -8,7 +8,7 @@ categories:  Work, Java, Security
 So my job gives me a nifty HP Laptop running Windows 7.  It's imaged by the fabulous IT guys off in another building, and, although I have local Admin rights, the AD rights supercede me, and apply some basic security constraints on my PC, one of which is that the PC goes to sleep and locks the screen after 15 minutes if I'm not using it.  I'm on it all day non-stop when I'm in the office, so this is never an issue, but when I work from home, it annoys the crap out of me.  When I work at home, I sit at a desk with my laotop to one side, and my home PC to the other side.  If I need to send an email or login to a server to do work, I use my laptop, but when I watch a video or do some sort of training that isn't only available on the company Intranet, I use my home PC.  So, often my laptop sits ignored for more than 15 minutes.  I like to glance at it to see that no one has messaged me or sent me an email, so it'd be nice if the laptop didn't log me out for inactivity.  After all, it's in the security of my home office - nobody's gonna sneak up and do something evil when it's on my desk - I'm the only one around.
 <!-- more -->
 
-So I immediately thought of a solution - the Robot class in Java awt provides a mechanism for moving the mouse or clicking on the keyboard, ala `robot.mouseMove(100,100);`.  Ad much as I hate slapping semicolons on every line so the compiler knows I'm done with that thought, I fired up Netbeans to see if I could accomplish this wiggler.
+So I immediately thought of a solution - the Robot class in Java awt provides a mechanism for moving the mouse or clicking on the keyboard, ala `robot.mouseMove(100,100);`.  As much as I hate slapping semicolons on every line so the compiler knows I'm done with that thought, I fired up Netbeans to see if I could accomplish this wiggler.
 
 Here's what I came up with (minus all the fluff):
 
@@ -86,4 +86,4 @@ Here's what I came up with (minus all the fluff):
         }
     }
 
-It works and I'm satisfied.  I put it in an executable jar.  now when I use my laptop at home I just double click the wiggler.jar and it keeps my laptop logged in all day.  Profit. 
+It works and I'm satisfied.  I put it in an executable jar.  Now when I use my laptop at home I just double click the wiggler.jar and it keeps my laptop logged in all day.  Profit. 

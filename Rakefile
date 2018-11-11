@@ -109,6 +109,21 @@ task :new_post, :title do |t, args|
     post.puts "categories: "
     post.puts "---"
     post.puts "<!-- more -->"
+    post.puts "<!-- see https://github.com/Shopify/liquid/wiki/Liquid-for-Designers for stuff "
+    post.puts "# H1"
+    post.puts "## H2"
+    post.puts "[I'm an inline-style link](https://www.google.com)"
+    post.puts "![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png 'Logo Title Text 1')"
+    post.puts "```javascript"
+    post.puts "var s = 'JavaScript syntax highlighting';"
+    post.puts "alert(s);"
+    post.puts "```"
+    post.puts "   * an unordered list item (note a newline is required before the list begins)"
+    post.puts "   1. an ordered list item"
+    post.puts "| Tables        | Are           | Cool  |"
+    post.puts "| ------------- |:-------------:| -----:|"
+    post.puts "| col 3 is      | right-aligned | $1600 |"
+    post.puts "-->"
   end
 end
 
