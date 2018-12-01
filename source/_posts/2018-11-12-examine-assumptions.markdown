@@ -6,13 +6,15 @@ comments: true
 categories: politics
 ---
 I have recently deleted my Facebook account.  I did so rather compulsively, following a rather disheartening exchange between myself and a band of Trump supporters
-regarding what liberals should do following the 2018 mid-term elections, which at the time, I felt a bit of sdisappointment about.  My favorite candidate, Beto
+regarding what liberals should do following the 2018 mid-term elections, which at the time, I felt a bit of disappointment about.  My favorite candidate, Beto
 O'Rourke failed to defeat the horrible Ted Cruz in a run for a US Senate seat in Texas.  So, I posted as many others had, that Democrats need to steer the party
 to the left, that working Americans no longer really felt akin to Democratic positions.  Many union members had voted for Trump in the last election, and I felt
 a need to reach out to them.  But this was Facebook, and my Trump-supporting 'friends' took this as an opportunity to ridicule the left perspective, and plaster
 all over my page all sorts of idiotic memes chock full of propaganda culled from the deepest assholes in Russian bots.  Ironically, as political observations go,
 I was even wrong in my reaction to the 2018 Blue Wave.  The turnover of House seats in 2018 was the most in number in American history, according to [Newsweek](https://www.newsweek.com/republicans-midterms-popular-vote-worst-ever-1226441).  
+
 Much of what was splashed on my Facebook page that day was accusations that I hadn't thought carefully enough about my politics.
+
 I am willing to examine my liberal assumptions, however, any faithful attempt to examine one's assumptions is like trying to rid your attic of rats.  You can't see 
 all of them, and if you don't get them all, you'll have the same horde scratching in the dark in a few weeks.  It's non-trivial to list all your assumptions at the
 start because it is unclear when you're done. Nevertheless, I'll try.
