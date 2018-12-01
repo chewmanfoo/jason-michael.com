@@ -5,24 +5,35 @@ date: 2018-11-12 12:52
 comments: true
 categories: politics
 ---
+I have recently deleted my Facebook account.  I did so rather compulsively, following a rather disheartening exchange between myself and a band of Trump supporters
+regarding what liberals should do following the 2018 mid-term elections, which at the time, I felt a bit of sdisappointment about.  My favorite candidate, Beto
+O'Rourke failed to defeat the horrible Ted Cruz in a run for a US Senate seat in Texas.  So, I posted as many others had, that Democrats need to steer the party
+to the left, that working Americans no longer really felt akin to Democratic positions.  Many union members had voted for Trump in the last election, and I felt
+a need to reach out to them.  But this was Facebook, and my Trump-supporting 'friends' took this as an opportunity to ridicule the left perspective, and plaster
+all over my page all sorts of idiotic memes chock full of propaganda culled from the deepest assholes in Russian bots.  Ironically, as political observations go,
+I was even wrong in my reaction to the 2018 Blue Wave.  The turnover of House seats in 2018 was the most in number in American history, according to [Newsweek](https://www.newsweek.com/republicans-midterms-popular-vote-worst-ever-1226441).  
+Much of what was splashed on my Facebook page that day was accusations that I hadn't thought carefully enough about my politics.
 I am willing to examine my liberal assumptions, however, any faithful attempt to examine one's assumptions is like trying to rid your attic of rats.  You can't see 
 all of them, and if you don't get them all, you'll have the same horde scratching in the dark in a few weeks.  It's non-trivial to list all your assumptions at the
 start because it is unclear when you're done. Nevertheless, I'll try.
+
+_Post script: I'm also noticing that many of these assumptions more resemble beliefs.  Be that as it may..._
 <!-- more -->
 ## Government Assumptions
 I assume that government's chief role today is to oppose global business. This is a government which functions for all people as the framers of the Constitution
-intended it, but this is not the government we find ourselves ruled by presently.  Our government today is an oligarchy of the uber-rich and those who seek to
+intended it, but this is not the government we find ourselves ruled by today.  Our government today is an oligarchy of the uber-rich and those who seek to
 be and will sell their mother to get on top. Returning to topic, Government should be as strong as global business is.  But current Republicans want a weaker
 government becuase they claim that a strong government endangers personal liberty.  The person they envision having the liberty, however, is the billionaire.   
 
 ## Economic Assumptions
-I assume that a government that spends less than it takes in in taxes, levy's and fees is a better government than one who borrows from some entity who does.
+I assume that a government that spends less than it takes in in taxes, levy's and fees is a better government than one who borrows to pay for the things it wants.
 
 I assume that when one government borrows from another, it is endebted to that other in more ways than cash.  I remember hearing about an issue with the Suez Canal
 where the British govt of the 1970's was unable to exert pressure on an Arab state because it owed the state money.  I can't remember the details.
 
 I assume that a healthy economy on a micro and macro level requires a large body of consumers who have cash to purchase goods produced by a smaller body of
-producers.  Some of the consumers might also be producers, or work for producers.  
+producers.  Some of the consumers will also be producers, or work for producers.  Thus the producer has incentive to treat the consumer fairly, or, the ration
+bends towards fairness, assuming the producer wants to be successful and can only do so by selling what she produces.
 
 ## Social Assumptions
 I assume that racism is both natural and avoidable.  Just as we men can be socialized not to rape women we find attractive given the opportunity, we can be trained
@@ -32,6 +43,11 @@ people are no real threat to us as a group.  Because immersing ourselves in the 
 ## Global Strategic Assumptions
 I assume American could do without all the global hegemony, but only if our rich classes can tolerate the risk... and they can, they just don't want to.  I believe we
 need to revisit our ideas about wealth.  Maybe I'll write about this another time.
+
+I assume that people who claim to want to dominate the world haven't given it much thought.  Instead, they are just announcing which road they intend to take.  They have
+yet to make any headway down that road, and thus aren't really prepared to have any real sense of the implications of their desire.  They are no threat to us.
+
+I assume that nuclear weapons are a threat to global civilization because people could choose to use them, even if the consequences are catastrophic.
 
 ## General Assumptions
 
