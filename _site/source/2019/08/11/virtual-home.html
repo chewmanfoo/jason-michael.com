@@ -1,0 +1,129 @@
+
+<p>I bought a Dell Precision Workstation with dual xeon’s and added 64 gigs of RAM. I intend to turn it into a VM host using KVM (it’s running CentOS 7.x). I’m struggling with this because it seems every thing I try, I find issues I have to trouble shoot, and spending all day troubleshooting and not building is a real pain. <!-- more --></p>
+
+<h2 id="automation">Automation</h2>
+
+<p>I created a ‘build a VM’ script, containing the following:</p>
+
+<p>“sh</p>
+
+<h1 id="setupdeploy_vmbash">/setup/deploy_vm.bash</h1>
+
+<p>source /setup/lib.bash</p>
+
+<p>if [$# -eq 0]; then echo “No arguments supplied!” echo “REQUIRED: 1 = instid [example: centos-git], 2 = insthost [example: centos-git]” exit 1 fi</p>
+
+<p>instid=“$1” insthost=“$2” tzone=“US/Central” domain=“atomic.org” discsize=“20G” memsize=“2048”</p>
+
+<p>normallog “grab centos 7 cloud image”</p>
+
+<p>cd /var/lib/libvirt/boot</p>
+
+<p>if [-f CentOS-7-x86_64-GenericCloud.qcow2]; then errorlog “qcow file exists, Skipping” else detaillog “qcow file does not exist. Download it” wget http://cloud.centos.org/centos/7/images/CentOS-7-x86_64-GenericCloud.qcow2 fi</p>
+
+<p>normallog “setup directories”</p>
+
+<p>D=/var/lib/libvirt/images VM=$instid mkdir -vp $D/$VM</p>
+
+<p>normallog “setup metadata”</p>
+
+<p>cd $D/$VM</p>
+
+<p>rm -f meta-data touch meta-data</p>
+
+<p>echo “instance-id: $instid” » meta-data echo “local-hostname: $insthost” » meta-data</p>
+
+<p>normallog “current meta-data:”</p>
+
+<p>cat meta-data</p>
+
+<p>normallog “setup user-data”</p>
+
+<p>if [-f ~/.ssh/id_$insthost]; then errorlog “~/.ssh/id_$insthost exists. Skipping” else ssh-keygen -t ed25519 -C “VM Login ssh key foo” -f ~/.ssh/id_$insthost -P “” fi</p>
+
+<p>tmpkey=$(cat ~/.ssh/id_$insthost.pub)</p>
+
+<p>cd $D/$VM</p>
+
+<p>rm -f user-data touch user-data</p>
+
+<p>cat &gt; user-data « ENDOFFILE</p>
+
+<h1 id="cloudconfig">cloud-config</h1>
+
+<h1 id="hostname_management">Hostname management</h1>
+
+<p>preserve_hostname: False hostname: $insthost fqdn: $insthost.$domain</p>
+
+<h1 id="users">Users</h1>
+
+<p>users: - default - name: jason groups: [wheel] shell: /bin/bash sudo: ALL=(ALL) NOPASSWD:ALL ssh-authorized-keys: - $tmpkey</p>
+
+<h1 id="configure_where_output_will_go">Configure where output will go</h1>
+
+<p>output: all: “» /var/log/cloud-init.log”</p>
+
+<h1 id="configure_interaction_with_ssh_server">configure interaction with ssh server</h1>
+
+<p>ssh_genkeytypes: [ed25519, rsa]</p>
+
+<h1 id="install_my_public_ssh_key_to_the_first_userdefined_user_configured">Install my public ssh key to the first user-defined user configured</h1>
+
+<h1 id="in_cloudcfg_in_the_template_which_is_centos_for_centos_cloud_images">in cloud.cfg in the template (which is centos for CentOS cloud images)</h1>
+
+<p>ssh_authorized_keys: - $tmpkey</p>
+
+<h1 id="set_timezone_for_vm">set timezone for VM</h1>
+
+<p>timezone: $tzone</p>
+
+<h1 id="remove_cloudinit">Remove cloud-init</h1>
+
+<p>runcmd: - systemctl stop network &amp;&amp; systemctl start network - yum -y remove cloud-init ENDOFFILE</p>
+
+<p>cat user-data</p>
+
+<p>normallog “Copy cloud image” cd $D/$VM cp /var/lib/libvirt/boot/CentOS-7-x86_64-GenericCloud.qcow2 $VM.qcow2</p>
+
+<p>normallog “Create $discsize disc image” cd $D/$VM export LIBGUESTFS_BACKEND=direct qemu-img create -f qcow2 -o preallocation=metadata $VM.new.image $discsize virt-resize –quiet –expand /dev/sda1 $VM.qcow2 $VM.new.image cd $D/$VM mv $VM.new.image $VM.qcow2</p>
+
+<p>normallog “Creating cloud-init iso”</p>
+
+<p>mkisofs -o $VM-cidata.iso -V cidata -J -r user-data meta-data</p>
+
+<p>normallog “Create a pool”</p>
+
+<p>virsh pool-create-as –name $VM –type dir –target $D/$VM</p>
+
+<p>normallog “Install VM”</p>
+
+<p>cd $D/$VM virt-install –import –name $VM \ –memory $memsize –vcpus 1 –cpu host \ –disk $VM.qcow2,format=qcow2,bus=virtio \ –disk $VM-cidata.iso,device=cdrom \ –network bridge=virbr0,model=virtio \ –os-type=linux \ –os-variant=centos7.0 \ –graphics spice \ –noautoconsole</p>
+
+<p>normallog “Cleanup”</p>
+
+<p>cd $D/$VM virsh change-media $VM hda –eject –config rm meta-data user-data centos7-vm1-cidata.iso</p>
+
+<p>normallog “Get IP Address”</p>
+
+<p>virsh net-dhcp-leases default</p>
+
+<p>“</p>
+
+<h2 id="test">Test</h2>
+
+<p>I tested the script a few times:</p>
+<!-- see https://github.com/Shopify/liquid/wiki/Liquid-for-Designers for stuff 
+# H1
+## H2
+[I'm an inline-style link](https://www.google.com)
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png 'Logo Title Text 1')
+```javascript
+var s = 'JavaScript syntax highlighting';
+alert(s);
+```
+   * an unordered list item (note a newline is required before the list begins)
+   1. an ordered list item
+| Tables        | Are           | Cool  |
+| - - - - - - - - - - - - - |:- - - - - - - - - - - - -:| - - - - -:|
+| col 3 is      | right-aligned | $1600 |
+-->
