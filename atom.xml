@@ -4,7 +4,7 @@
   <title><![CDATA[Jason Michael dot com]]></title>
   <link href="http://chewmanfoo.github.com/jason-michael/atom.xml" rel="self"/>
   <link href="http://chewmanfoo.github.com/jason-michael/"/>
-  <updated>2019-12-27T18:04:42-06:00</updated>
+  <updated>2019-12-27T19:40:51-06:00</updated>
   <id>http://chewmanfoo.github.com/jason-michael/</id>
   <author>
     <name><![CDATA[Jason Michael]]></name>
@@ -12,6 +12,43 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Electronics Project]]></title>
+    <link href="http://chewmanfoo.github.com/jason-michael/blog/2019/12/27/electronics-project/"/>
+    <updated>2019-12-27T19:36:00-06:00</updated>
+    <id>http://chewmanfoo.github.com/jason-michael/blog/2019/12/27/electronics-project</id>
+    <content type="html"><![CDATA[<p>In 2020, I want to work on a new electonics project involving solar.  I think a durable, outdoor solar lamp would be interesting.  It would need a solar panel,
+a charge controller, a battery, and a lamp.  I want to make a yard lamp that runs all night using energy it acquired charging all day.  It seems doable, if I
+can find the parts necessary and the information about the electronics.</p>
+
+<!-- more -->
+
+
+<p>I want to build the project in some computer-aided design program first, confirm that the components are compatible and sized properly, then build the board and
+installation box on my bench.</p>
+
+<p>I&#8217;ll update this page as I find he right parts.</p>
+
+<!-- see https://github.com/Shopify/liquid/wiki/Liquid-for-Designers for stuff 
+# H1
+## H2
+[I'm an inline-style link](https://www.google.com)
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png 'Logo Title Text 1')
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">var</span> <span class="nx">s</span> <span class="o">=</span> <span class="s1">&#39;JavaScript syntax highlighting&#39;</span><span class="p">;</span>
+</span><span class='line'><span class="nx">alert</span><span class="p">(</span><span class="nx">s</span><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure>
+   * an unordered list item (note a newline is required before the list begins)
+   1. an ordered list item
+| Tables        | Are           | Cool  |
+| &#8212;&#8212;&#8212;&#8212;- |:&#8212;&#8212;&#8212;&#8212;-:| &#8212;&#8211;:|
+| col 3 is      | right-aligned | $1600 |
+&#8211;>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Test]]></title>
