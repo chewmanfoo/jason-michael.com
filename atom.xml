@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Jason Michael dot com]]></title>
+  <link href="http://chewmanfoo.github.com/jason-michael/atom.xml" rel="self"/>
+  <link href="http://chewmanfoo.github.com/jason-michael/"/>
+  <updated>2019-12-27T18:04:42-06:00</updated>
+  <id>http://chewmanfoo.github.com/jason-michael/</id>
+  <author>
+    <name><![CDATA[Jason Michael]]></name>
+    <email><![CDATA[nospam@jason-michael.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Test]]></title>
+    <link href="http://chewmanfoo.github.com/jason-michael/blog/2019/12/27/test/"/>
+    <updated>2019-12-27T00:21:00-06:00</updated>
+    <id>http://chewmanfoo.github.com/jason-michael/blog/2019/12/27/test</id>
+    <content type="html"><![CDATA[<p>Just a test</p>
+
+<!-- more -->
+
+
+
+
+<!-- see https://github.com/Shopify/liquid/wiki/Liquid-for-Designers for stuff 
+# H1
+## H2
+[I'm an inline-style link](https://www.google.com)
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png 'Logo Title Text 1')
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">var</span> <span class="nx">s</span> <span class="o">=</span> <span class="s1">&#39;JavaScript syntax highlighting&#39;</span><span class="p">;</span>
+</span><span class='line'><span class="nx">alert</span><span class="p">(</span><span class="nx">s</span><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure>
+   * an unordered list item (note a newline is required before the list begins)
+   1. an ordered list item
+| Tables        | Are           | Cool  |
+| &#8212;&#8212;&#8212;&#8212;- |:&#8212;&#8212;&#8212;&#8212;-:| &#8212;&#8211;:|
+| col 3 is      | right-aligned | $1600 |
+&#8211;>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Back Again]]></title>
+    <link href="http://chewmanfoo.github.com/jason-michael/blog/2019/12/26/back-again/"/>
+    <updated>2019-12-26T23:47:00-06:00</updated>
+    <id>http://chewmanfoo.github.com/jason-michael/blog/2019/12/26/back-again</id>
+    <content type="html"><![CDATA[<p>I have returned after another year floundering in the wilderness.</p>
+
+<!-- more -->
+
+
+<!-- see https://github.com/Shopify/liquid/wiki/Liquid-for-Designers for stuff 
+# H1
+## H2
+[I'm an inline-style link](https://www.google.com)
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png 'Logo Title Text 1')
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">var</span> <span class="nx">s</span> <span class="o">=</span> <span class="s1">&#39;JavaScript syntax highlighting&#39;</span><span class="p">;</span>
+</span><span class='line'><span class="nx">alert</span><span class="p">(</span><span class="nx">s</span><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure>
+   * an unordered list item (note a newline is required before the list begins)
+   1. an ordered list item
+| Tables        | Are           | Cool  |
+| &#8212;&#8212;&#8212;&#8212;- |:&#8212;&#8212;&#8212;&#8212;-:| &#8212;&#8211;:|
+| col 3 is      | right-aligned | $1600 |
+&#8211;>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Virtual Home]]></title>
+    <link href="http://chewmanfoo.github.com/jason-michael/blog/2019/08/11/virtual-home/"/>
+    <updated>2019-08-11T21:46:00-05:00</updated>
+    <id>http://chewmanfoo.github.com/jason-michael/blog/2019/08/11/virtual-home</id>
+    <content type="html"><![CDATA[<p>I bought a Dell Precision Workstation with dual xeon&#8217;s and added 64 gigs of RAM.  I intend to turn it into a VM host using
+KVM (it&#8217;s running CentOS 7.x).  I&#8217;m struggling with this because it seems every thing I try, I find issues I have to trouble
+shoot, and spending all day troubleshooting and not building is a real pain.</p>
+
+<!-- more -->
+
+
+<h2>Automation</h2>
+
+<p>I created a &#8216;build a VM&#8217; script, containing the following:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+<span class='line-number'>67</span>
+<span class='line-number'>68</span>
+<span class='line-number'>69</span>
+<span class='line-number'>70</span>
+<span class='line-number'>71</span>
+<span class='line-number'>72</span>
+<span class='line-number'>73</span>
+<span class='line-number'>74</span>
+<span class='line-number'>75</span>
+<span class='line-number'>76</span>
+<span class='line-number'>77</span>
+<span class='line-number'>78</span>
+<span class='line-number'>79</span>
+<span class='line-number'>80</span>
+<span class='line-number'>81</span>
+<span class='line-number'>82</span>
+<span class='line-number'>83</span>
+<span class='line-number'>84</span>
+<span class='line-number'>85</span>
+<span class='line-number'>86</span>
+<span class='line-number'>87</span>
+<span class='line-number'>88</span>
+<span class='line-number'>89</span>
+<span class='line-number'>90</span>
+<span class='line-number'>91</span>
+<span class='line-number'>92</span>
+<span class='line-number'>93</span>
+<span class='line-number'>94</span>
+<span class='line-number'>95</span>
+<span class='line-number'>96</span>
+<span class='line-number'>97</span>
+<span class='line-number'>98</span>
+<span class='line-number'>99</span>
+<span class='line-number'>100</span>
+<span class='line-number'>101</span>
+<span class='line-number'>102</span>
+<span class='line-number'>103</span>
+<span class='line-number'>104</span>
+<span class='line-number'>105</span>
+<span class='line-number'>106</span>
+<span class='line-number'>107</span>
+<span class='line-number'>108</span>
+<span class='line-number'>109</span>
+<span class='line-number'>110</span>
+<span class='line-number'>111</span>
+<span class='line-number'>112</span>
+<span class='line-number'>113</span>
+<span class='line-number'>114</span>
+<span class='line-number'>115</span>
+<span class='line-number'>116</span>
+<span class='line-number'>117</span>
+<span class='line-number'>118</span>
+<span class='line-number'>119</span>
+<span class='line-number'>120</span>
+<span class='line-number'>121</span>
+<span class='line-number'>122</span>
+<span class='line-number'>123</span>
+<span class='line-number'>124</span>
+<span class='line-number'>125</span>
+<span class='line-number'>126</span>
+<span class='line-number'>127</span>
+<span class='line-number'>128</span>
+<span class='line-number'>129</span>
+<span class='line-number'>130</span>
+<span class='line-number'>131</span>
+<span class='line-number'>132</span>
+<span class='line-number'>133</span>
+<span class='line-number'>134</span>
+<span class='line-number'>135</span>
+<span class='line-number'>136</span>
+<span class='line-number'>137</span>
+<span class='line-number'>138</span>
+<span class='line-number'>139</span>
+<span class='line-number'>140</span>
+<span class='line-number'>141</span>
+<span class='line-number'>142</span>
+<span class='line-number'>143</span>
+<span class='line-number'>144</span>
+<span class='line-number'>145</span>
+<span class='line-number'>146</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="c"># /setup/deploy_vm.bash</span>
+</span><span class='line'>
+</span><span class='line'><span class="nb">source</span> /setup/lib.bash
+</span><span class='line'>
+</span><span class='line'><span class="k">if</span> <span class="o">[</span> <span class="nv">$# </span>-eq 0 <span class="o">]</span>; <span class="k">then</span>
+</span><span class='line'><span class="k">    </span><span class="nb">echo</span> <span class="s2">&quot;No arguments supplied!&quot;</span>
+</span><span class='line'>    <span class="nb">echo</span> <span class="s2">&quot;REQUIRED: 1 = instid [example: centos-git], 2 = insthost [example: centos-git]&quot;</span>
+</span><span class='line'>    <span class="nb">exit </span>1
+</span><span class='line'><span class="k">fi</span>
+</span><span class='line'>
+</span><span class='line'><span class="nv">instid</span><span class="o">=</span><span class="s2">&quot;$1&quot;</span>
+</span><span class='line'><span class="nv">insthost</span><span class="o">=</span><span class="s2">&quot;$2&quot;</span>
+</span><span class='line'><span class="nv">tzone</span><span class="o">=</span><span class="s2">&quot;US/Central&quot;</span>
+</span><span class='line'><span class="nv">domain</span><span class="o">=</span><span class="s2">&quot;atomic.org&quot;</span>
+</span><span class='line'><span class="nv">discsize</span><span class="o">=</span><span class="s2">&quot;20G&quot;</span>
+</span><span class='line'><span class="nv">memsize</span><span class="o">=</span><span class="s2">&quot;2048&quot;</span>
+</span><span class='line'>
+</span><span class='line'>normallog <span class="s2">&quot;grab centos 7 cloud image&quot;</span>
+</span><span class='line'>
+</span><span class='line'><span class="nb">cd</span> /var/lib/libvirt/boot
+</span><span class='line'>
+</span><span class='line'><span class="k">if</span> <span class="o">[</span> -f <span class="s2">&quot;CentOS-7-x86_64-GenericCloud.qcow2&quot;</span> <span class="o">]</span>; <span class="k">then</span>
+</span><span class='line'><span class="k">    </span>errorlog <span class="s2">&quot;qcow file exists, Skipping&quot;</span>
+</span><span class='line'><span class="k">else</span>
+</span><span class='line'><span class="k">    </span>detaillog <span class="s2">&quot;qcow file does not exist.  Download it&quot;</span>
+</span><span class='line'>    wget http://cloud.centos.org/centos/7/images/CentOS-7-x86_64-GenericCloud.qcow2
+</span><span class='line'><span class="k">fi</span>
+</span><span class='line'>
+</span><span class='line'>normallog <span class="s2">&quot;setup directories&quot;</span>
+</span><span class='line'>
+</span><span class='line'><span class="nv">D</span><span class="o">=</span>/var/lib/libvirt/images
+</span><span class='line'><span class="nv">VM</span><span class="o">=</span><span class="nv">$instid</span>
+</span><span class='line'>mkdir -vp <span class="nv">$D</span>/<span class="nv">$VM</span>
+</span><span class='line'>
+</span><span class='line'>normallog <span class="s2">&quot;setup metadata&quot;</span>
+</span><span class='line'>
+</span><span class='line'><span class="nb">cd</span> <span class="nv">$D</span>/<span class="nv">$VM</span>
+</span><span class='line'>
+</span><span class='line'>rm -f meta-data
+</span><span class='line'>touch meta-data
+</span><span class='line'>
+</span><span class='line'><span class="nb">echo</span> <span class="s2">&quot;instance-id: $instid&quot;</span> &gt;&gt; meta-data
+</span><span class='line'><span class="nb">echo</span> <span class="s2">&quot;local-hostname: $insthost&quot;</span> &gt;&gt; meta-data
+</span><span class='line'>
+</span><span class='line'>normallog <span class="s2">&quot;current meta-data:&quot;</span>
+</span><span class='line'>
+</span><span class='line'>cat meta-data
+</span><span class='line'>
+</span><span class='line'>normallog <span class="s2">&quot;setup user-data&quot;</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">if</span> <span class="o">[</span> -f ~/.ssh/id_<span class="nv">$insthost</span> <span class="o">]</span>; <span class="k">then</span>
+</span><span class='line'><span class="k">    </span>errorlog <span class="s2">&quot;~/.ssh/id_$insthost exists.  Skipping&quot;</span>
+</span><span class='line'><span class="k">else</span>
+</span><span class='line'><span class="k">    </span>ssh-keygen -t ed25519 -C <span class="s2">&quot;VM Login ssh key foo&quot;</span> -f ~/.ssh/id_<span class="nv">$insthost</span> -P <span class="s2">&quot;&quot;</span>
+</span><span class='line'><span class="k">fi</span>
+</span><span class='line'>
+</span><span class='line'><span class="nv">tmpkey</span><span class="o">=</span><span class="k">$(</span>cat ~/.ssh/id_<span class="nv">$insthost</span>.pub<span class="k">)</span>
+</span><span class='line'>
+</span><span class='line'><span class="nb">cd</span> <span class="nv">$D</span>/<span class="nv">$VM</span>
+</span><span class='line'>
+</span><span class='line'>rm -f user-data
+</span><span class='line'>touch user-data
+</span><span class='line'>
+</span><span class='line'>cat &gt; user-data <span class="s">&lt;&lt; ENDOFFILE</span>
+</span><span class='line'><span class="s">#cloud-config</span>
+</span><span class='line'>
+</span><span class='line'><span class="s"># Hostname management</span>
+</span><span class='line'><span class="s">preserve_hostname: False</span>
+</span><span class='line'><span class="s">hostname: $insthost</span>
+</span><span class='line'><span class="s">fqdn: $insthost.$domain</span>
+</span><span class='line'>
+</span><span class='line'><span class="s"># Users</span>
+</span><span class='line'><span class="s">users:</span>
+</span><span class='line'><span class="s">    - default</span>
+</span><span class='line'><span class="s">    - name: jason</span>
+</span><span class='line'><span class="s">      groups: [&#39;wheel&#39;]</span>
+</span><span class='line'><span class="s">      shell: /bin/bash</span>
+</span><span class='line'><span class="s">      sudo: ALL=(ALL) NOPASSWD:ALL</span>
+</span><span class='line'><span class="s">      ssh-authorized-keys:</span>
+</span><span class='line'><span class="s">        - $tmpkey</span>
+</span><span class='line'>
+</span><span class='line'><span class="s"># Configure where output will go</span>
+</span><span class='line'><span class="s">output:</span>
+</span><span class='line'><span class="s">  all: &quot;&gt;&gt; /var/log/cloud-init.log&quot;</span>
+</span><span class='line'>
+</span><span class='line'><span class="s"># configure interaction with ssh server</span>
+</span><span class='line'><span class="s">ssh_genkeytypes: [&#39;ed25519&#39;, &#39;rsa&#39;]</span>
+</span><span class='line'>
+</span><span class='line'><span class="s"># Install my public ssh key to the first user-defined user configured</span>
+</span><span class='line'><span class="s"># in cloud.cfg in the template (which is centos for CentOS cloud images)</span>
+</span><span class='line'><span class="s">ssh_authorized_keys:</span>
+</span><span class='line'><span class="s">  - $tmpkey</span>
+</span><span class='line'>
+</span><span class='line'><span class="s"># set timezone for VM</span>
+</span><span class='line'><span class="s">timezone: $tzone</span>
+</span><span class='line'>
+</span><span class='line'><span class="s"># Remove cloud-init</span>
+</span><span class='line'><span class="s">runcmd:</span>
+</span><span class='line'><span class="s">  - systemctl stop network &amp;&amp; systemctl start network</span>
+</span><span class='line'><span class="s">  - yum -y remove cloud-init</span>
+</span><span class='line'><span class="s">ENDOFFILE</span>
+</span><span class='line'>
+</span><span class='line'>cat user-data
+</span><span class='line'>
+</span><span class='line'>normallog <span class="s2">&quot;Copy cloud image&quot;</span>
+</span><span class='line'><span class="nb">cd</span> <span class="nv">$D</span>/<span class="nv">$VM</span>
+</span><span class='line'>cp /var/lib/libvirt/boot/CentOS-7-x86_64-GenericCloud.qcow2 <span class="nv">$VM</span>.qcow2
+</span><span class='line'>
+</span><span class='line'>normallog <span class="s2">&quot;Create $discsize disc image&quot;</span>
+</span><span class='line'><span class="nb">cd</span> <span class="nv">$D</span>/<span class="nv">$VM</span>
+</span><span class='line'><span class="nb">export </span><span class="nv">LIBGUESTFS_BACKEND</span><span class="o">=</span>direct
+</span><span class='line'>qemu-img create -f qcow2 -o <span class="nv">preallocation</span><span class="o">=</span>metadata <span class="nv">$VM</span>.new.image <span class="nv">$discsize</span>
+</span><span class='line'>virt-resize --quiet --expand /dev/sda1 <span class="nv">$VM</span>.qcow2 <span class="nv">$VM</span>.new.image
+</span><span class='line'><span class="nb">cd</span> <span class="nv">$D</span>/<span class="nv">$VM</span>
+</span><span class='line'>mv <span class="nv">$VM</span>.new.image <span class="nv">$VM</span>.qcow2
+</span><span class='line'>
+</span><span class='line'>normallog <span class="s2">&quot;Creating cloud-init iso&quot;</span>
+</span><span class='line'>
+</span><span class='line'>mkisofs -o <span class="nv">$VM</span>-cidata.iso -V cidata -J -r user-data meta-data
+</span><span class='line'>
+</span><span class='line'>normallog <span class="s2">&quot;Create a pool&quot;</span>
+</span><span class='line'>
+</span><span class='line'>virsh pool-create-as --name <span class="nv">$VM</span> --type dir --target <span class="nv">$D</span>/<span class="nv">$VM</span>
+</span><span class='line'>
+</span><span class='line'>normallog <span class="s2">&quot;Install VM&quot;</span>
+</span><span class='line'>
+</span><span class='line'><span class="nb">cd</span> <span class="nv">$D</span>/<span class="nv">$VM</span>
+</span><span class='line'>virt-install --import --name <span class="nv">$VM</span> <span class="se">\</span>
+</span><span class='line'>--memory <span class="nv">$memsize</span> --vcpus 1 --cpu host <span class="se">\</span>
+</span><span class='line'>--disk <span class="nv">$VM</span>.qcow2,format<span class="o">=</span>qcow2,bus<span class="o">=</span>virtio <span class="se">\</span>
+</span><span class='line'>--disk <span class="nv">$VM</span>-cidata.iso,device<span class="o">=</span>cdrom <span class="se">\</span>
+</span><span class='line'>--network <span class="nv">bridge</span><span class="o">=</span>virbr0,model<span class="o">=</span>virtio <span class="se">\</span>
+</span><span class='line'>--os-type<span class="o">=</span>linux <span class="se">\</span>
+</span><span class='line'>--os-variant<span class="o">=</span>centos7.0 <span class="se">\</span>
+</span><span class='line'>--graphics spice <span class="se">\</span>
+</span><span class='line'>--noautoconsole
+</span><span class='line'>
+</span><span class='line'>normallog <span class="s2">&quot;Cleanup&quot;</span>
+</span><span class='line'>
+</span><span class='line'><span class="nb">cd</span> <span class="nv">$D</span>/<span class="nv">$VM</span>
+</span><span class='line'>virsh change-media <span class="nv">$VM</span> hda --eject --config
+</span><span class='line'>rm meta-data user-data centos7-vm1-cidata.iso
+</span><span class='line'>
+</span><span class='line'>normallog <span class="s2">&quot;Get IP Address&quot;</span>
+</span><span class='line'>
+</span><span class='line'>virsh net-dhcp-leases default
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Test</h2>
+
+<p>I tested the script a few times:</p>
+
+<!-- see https://github.com/Shopify/liquid/wiki/Liquid-for-Designers for stuff 
+# H1
+## H2
+[I'm an inline-style link](https://www.google.com)
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png 'Logo Title Text 1')
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">var</span> <span class="nx">s</span> <span class="o">=</span> <span class="s1">&#39;JavaScript syntax highlighting&#39;</span><span class="p">;</span>
+</span><span class='line'><span class="nx">alert</span><span class="p">(</span><span class="nx">s</span><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure>
+   * an unordered list item (note a newline is required before the list begins)
+   1. an ordered list item
+| Tables        | Are           | Cool  |
+| &#8212;&#8212;&#8212;&#8212;- |:&#8212;&#8212;&#8212;&#8212;-:| &#8212;&#8211;:|
+| col 3 is      | right-aligned | $1600 |
+&#8211;>
+
+]]></content>
+  </entry>
+  
+</feed>
